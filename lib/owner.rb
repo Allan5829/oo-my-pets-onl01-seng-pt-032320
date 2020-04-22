@@ -46,9 +46,6 @@ class Owner
   
   def walk_dogs
     #binding.pry
-    #@pets[:dogs].each do |dog|
-     # dog.mood = "happy"
-    #end 
     Dog.all.select do |dog| 
       if (dog.owner == self)
         dog.mood = "happy"
