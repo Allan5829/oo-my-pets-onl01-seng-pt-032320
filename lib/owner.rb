@@ -67,6 +67,11 @@ class Owner
         dog.mood = "happy"
       end 
     end
+    Cat.all.select do |cat| 
+      if (cat.owner == self)
+        cat.mood = "happy"
+      end 
+    end
     
     
     @pets.each do |animal, pet|
