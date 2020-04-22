@@ -49,6 +49,9 @@ class Owner
     #@pets[:dogs].each do |dog|
      # dog.mood = "happy"
     #end 
+    Dog.all.select do |dog| 
+      if (dog.owner == self)
+        dog.mood 
   end 
   
   def feed_cats
