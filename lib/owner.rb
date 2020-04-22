@@ -64,7 +64,8 @@ class Owner
   def sell_pets
     Dog.all.select do |dog| 
       if (dog.owner == self)
-        dog.mood = "happy"
+        pet.mood = "nervous"
+        pet.owner = nil
       end 
     end
     Cat.all.select do |cat| 
