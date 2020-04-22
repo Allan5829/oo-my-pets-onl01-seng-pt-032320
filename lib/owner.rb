@@ -51,7 +51,9 @@ class Owner
     #end 
     Dog.all.select do |dog| 
       if (dog.owner == self)
-        dog.mood 
+        dog.mood = "happy"
+      end 
+    end 
   end 
   
   def feed_cats
