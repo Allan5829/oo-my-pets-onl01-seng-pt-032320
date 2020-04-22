@@ -70,7 +70,8 @@ class Owner
     end
     Cat.all.select do |cat| 
       if (cat.owner == self)
-        cat.mood = "happy"
+        pet.mood = "nervous"
+        pet.owner = nil
       end 
     end
     
