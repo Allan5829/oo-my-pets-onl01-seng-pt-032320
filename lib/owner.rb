@@ -74,17 +74,6 @@ class Owner
         pet.owner = nil
       end 
     end
-    
-    
-    @pets.each do |animal, pet|
-      if (animal == [:dogs]) 
-        pet.mood = "nervous"
-        pet.owner = nil
-      elsif (animal == [:cats])
-        pet.mood = "nervous"
-        pet.owner = nil 
-      end 
-    end 
     @pets.clear
   end 
   
