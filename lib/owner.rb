@@ -74,6 +74,7 @@ class Owner
         pet.owner = nil
       end 
     end
+    @pets = []
   end 
   
   def list_pets
