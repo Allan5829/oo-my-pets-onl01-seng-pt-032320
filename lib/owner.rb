@@ -62,7 +62,11 @@ class Owner
   end 
   
   def sell_pets
-    
+    Dog.all.select do |dog| 
+      if (dog.owner == self)
+        dog.mood = "happy"
+      end 
+    end
     
     
     @pets.each do |animal, pet|
